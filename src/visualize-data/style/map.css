@@ -1,0 +1,135 @@
+html, body {
+    background-color: #ffffff;
+    margin: 0;
+    height: 100%;
+}
+
+#sidebar {
+    float: left;
+    height: 100%;
+    width: 20%;
+    position: relative;
+}
+
+#sidebar .wrapper {
+    padding: 1em;
+}
+
+#map-canvas {
+    float: right;
+    height: 100%;
+    width: 80%;
+}
+
+#info span {
+    display: block;
+    padding: .5em 0;
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+#min {
+    float: left;
+}
+
+#max {
+    float: right;
+}
+
+#min, #max, #startDate, #endDate {
+    font-weight: 700;
+    font-size: 1.75em;
+    padding: .5em 0;
+}
+
+#startDate, #endDate {
+    font-size: 1.25em;
+    display: block;
+}
+
+#legend {
+    position: absolute;
+    width: 87%;
+    bottom: 1.75em;
+}
+
+#footer {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    padding-top: 0.75em;
+    height: 1.75em;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    color: #909090;
+}
+
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+/*******************************************************************************
+ * Base style
+ ******************************************************************************/
+
+body {
+  box-sizing: border-box;
+  color: #373737;
+  background: #ffffff;
+  font-size: 16px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color: #222222;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+    padding-bottom: 1em;
+}

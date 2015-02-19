@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="HeatmapApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/map.css">
+    <title>Location History</title>
+</head>
+<body>
+
+<div id="sidebar">
+    <div class="wrapper">
+        <h1 class="title">Location History</h1>
+
+        <div id="info">
+            <h2>Processing Stats</h2>
+
+            <p>Size before aggregation:
+                <span id="aggregationInputSize"></span>
+            </p>
+            
+            <p>Size after aggregation:
+                <span id="aggregationOutputSize"></span>
+            </p>
+
+            <p>Processing time in seconds:
+                <span id="processingTime"></span>
+            </p>
+
+        </div>
+        <div id="legend">
+            <h2>Legend</h2>
+
+            <p>Start date:
+                <span id="startDate"></span>
+            </p>
+            <p>End date:
+                <span id="endDate"></span>
+            </p>
+
+            <p>
+                <span>Counts of locations:</span>
+            </p>
+
+            <span id="min"></span>
+            <span id="max"></span>
+            <img id="gradient" src="" style="width:100%"/>
+        </div>
+    </div>
+</div>
+
+<div id="map-canvas"></div>
+
+<div id="footer">
+    Visualize your <a href="https://www.google.com/settings/takeout">Location History</a> | By
+    <a href="http://www.mapr.com">MapR Technologies Inc.</a>, &amp;
+    <a href="http://comsysto.com">comSysto GmbH</a>
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/lib/heatmap-2.0.0.min.js"></script>
+<script type="text/javascript" src="js/lib/gmaps-heatmap.js"></script>
+<script type="text/javascript" src="js/visualization.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+*.class
+*.log
+*.pyc
+
+# IntelliJ IDE specific
+*.iml
+.idea/
+
+# Mac specific
+.DS_Store
+
+# data that would be too large
+data/
